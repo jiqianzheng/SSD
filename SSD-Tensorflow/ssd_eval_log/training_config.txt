@@ -1,0 +1,84 @@
+
+# =========================================================================== #
+# Training | Evaluation flags:
+# =========================================================================== #
+{'batch_size': 1,
+ 'checkpoint_path': '/Users/qianzheng/Downloads/SSD-Tensorflow/checkpoints/ssd_300_vgg.ckpt',
+ 'dataset_dir': './voc2007_test_tfrecords',
+ 'dataset_name': 'pascalvoc_2007',
+ 'dataset_split_name': 'test',
+ 'eval_dir': '/Users/qianzheng/Downloads/SSD-Tensorflow/ssd_eval_log',
+ 'eval_image_size': None,
+ 'eval_resize': 4,
+ 'gpu_memory_fraction': 0.1,
+ 'keep_top_k': 200,
+ 'master': '',
+ 'matching_threshold': 0.5,
+ 'max_num_batches': None,
+ 'model_name': 'ssd_300_vgg',
+ 'moving_average_decay': None,
+ 'nms_threshold': 0.45,
+ 'num_classes': 21,
+ 'num_preprocessing_threads': 4,
+ 'preprocessing_name': None,
+ 'remove_difficult': True,
+ 'select_threshold': 0.01,
+ 'select_top_k': 400,
+ 'wait_for_checkpoints': False}
+
+# =========================================================================== #
+# SSD net parameters:
+# =========================================================================== #
+{'anchor_offset': 0.5,
+ 'anchor_ratios': [[2, 0.5],
+                   [2, 0.5, 3, 0.3333333333333333],
+                   [2, 0.5, 3, 0.3333333333333333],
+                   [2, 0.5, 3, 0.3333333333333333],
+                   [2, 0.5],
+                   [2, 0.5]],
+ 'anchor_size_bounds': [0.15, 0.9],
+ 'anchor_sizes': [(21.0, 45.0),
+                  (45.0, 99.0),
+                  (99.0, 153.0),
+                  (153.0, 207.0),
+                  (207.0, 261.0),
+                  (261.0, 315.0)],
+ 'anchor_steps': [8, 16, 32, 64, 100, 300],
+ 'feat_layers': ['block4', 'block7', 'block8', 'block9', 'block10', 'block11'],
+ 'feat_shapes': [(38, 38), (19, 19), (10, 10), (5, 5), (3, 3), (1, 1)],
+ 'img_shape': (300, 300),
+ 'no_annotation_label': 21,
+ 'normalizations': [20, -1, -1, -1, -1, -1],
+ 'num_classes': 21,
+ 'prior_scaling': [0.1, 0.1, 0.2, 0.2]}
+
+# =========================================================================== #
+# Training | Evaluation dataset files:
+# =========================================================================== #
+['./voc2007_test_tfrecords/voc_2007_test_000.tfrecord',
+ './voc2007_test_tfrecords/voc_2007_test_001.tfrecord',
+ './voc2007_test_tfrecords/voc_2007_test_002.tfrecord',
+ './voc2007_test_tfrecords/voc_2007_test_003.tfrecord',
+ './voc2007_test_tfrecords/voc_2007_test_004.tfrecord',
+ './voc2007_test_tfrecords/voc_2007_test_005.tfrecord',
+ './voc2007_test_tfrecords/voc_2007_test_006.tfrecord',
+ './voc2007_test_tfrecords/voc_2007_test_007.tfrecord',
+ './voc2007_test_tfrecords/voc_2007_test_008.tfrecord',
+ './voc2007_test_tfrecords/voc_2007_test_009.tfrecord',
+ './voc2007_test_tfrecords/voc_2007_test_010.tfrecord',
+ './voc2007_test_tfrecords/voc_2007_test_011.tfrecord',
+ './voc2007_test_tfrecords/voc_2007_test_012.tfrecord',
+ './voc2007_test_tfrecords/voc_2007_test_013.tfrecord',
+ './voc2007_test_tfrecords/voc_2007_test_014.tfrecord',
+ './voc2007_test_tfrecords/voc_2007_test_015.tfrecord',
+ './voc2007_test_tfrecords/voc_2007_test_016.tfrecord',
+ './voc2007_test_tfrecords/voc_2007_test_017.tfrecord',
+ './voc2007_test_tfrecords/voc_2007_test_018.tfrecord',
+ './voc2007_test_tfrecords/voc_2007_test_019.tfrecord',
+ './voc2007_test_tfrecords/voc_2007_test_020.tfrecord',
+ './voc2007_test_tfrecords/voc_2007_test_021.tfrecord',
+ './voc2007_test_tfrecords/voc_2007_test_022.tfrecord',
+ './voc2007_test_tfrecords/voc_2007_test_023.tfrecord',
+ './voc2007_test_tfrecords/voc_2007_test_024.tfrecord',
+ './voc2007_test_tfrecords/voc_2007_test_025.tfrecord']
+
