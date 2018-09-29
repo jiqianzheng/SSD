@@ -1,7 +1,7 @@
 
 自己使用的具体模型
 链接:https://pan.baidu.com/s/1VEkxQACkhT4zrHny1-feAw  密码:72g3# SSD: Single Shot MultiBox Detector in TensorFlow
-放到checkpoints下
+放到checkpoints文件夹下
 
 SSD is an unified framework for object detection with a single network. It has been originally introduced in this research [article](http://arxiv.org/abs/1512.02325).
 
